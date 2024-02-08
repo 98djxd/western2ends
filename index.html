@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="709662" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <title>Western 2ends - Home</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.png" alt="Western 2ends Logo" class="logo" />
+
+      <h1>Western 2ends</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="main-menu"><a href="index.html">Home</a></li>
+        <li class="main-menu">
+          <a href="./html/attractions.html">Attractions</a>
+        </li>
+        <li class="main-menu"><a href="./html/shopping.html">Shopping</a></li>
+        <li class="main-menu">
+          <a href="./html/restaurants.html">Restaurants</a>
+        </li>
+        <li class="main-menu"><a href="./html/events.html">Events</a></li>
+        <li class="main-menu"><a href="./html/contact.html">Contact</a></li>
+        <li class="menu-icon" onclick="toggleMenu()">&#9776;</li>
+      </ul>
+      <ul class="menu-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./html/attractions.html">Attractions</a></li>
+        <li><a href="./html/shopping.html">Shopping</a></li>
+        <li><a href="./html/restaurants.html">Restaurants</a></li>
+        <li><a href="./html/events.html">Events</a></li>
+        <li><a href="./html/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="cover-container">
+      <figure class="cover-image">
+        <img src="images/tourists.jpeg" alt="tourists exploring" />
+      </figure>
+
+      <section class="cover-text">
+        <h1>A western city guide to never miss out</h1>
+        <h2>Top-rated western trends to discover</h2>
+      </section>
+    </section>
+
+    <section class="articles">
+      <article class="article-longer">
+        <figure class="article-image-longer">
+          <img
+            src="./images/Adventure-awaits.jpeg"
+            alt="Adventure awaits image"
+          />
+        </figure>
+        <section class="article-longer-text">
+          <h2>Adventure Awaits</h2>
+          <p>
+            Discover and explore top-rated attractions, parks, and museums that
+            Amsterdam New West has to offer. From interactive exhibits that are
+            both educational and fun, to expansive green spaces serving as a
+            haven for relaxation and recreation, there are numerous spots that
+            are perfectly tailored for family enjoyment. Experience the thrill
+            of adventure in Amsterdam New-West, that cater to diverse interests
+            for all age groups.
+          </p>
+
+          <button
+            class="read-more-btn"
+            onclick="window.location.href='./html/attractions.html'"
+          >
+            Read more
+          </button>
+        </section>
+      </article>
+
+      <article>
+        <figure class="article-image">
+          <img src="./images/All-you-can-shop.jpeg" alt="A" />
+        </figure>
+
+        <section class="article-text">
+          <h2>All You Can Shop</h2>
+          <p>
+            Immerse yourself in the family-friendly shopping scene of Amsterdam
+            Nieuw-West, a vibrant and diverse district known for its unique
+            boutiques and stores. These local gems offer a wide range of
+            products and experiences that cater to every member of the family.
+            Whether you're looking for trendy apparel, handcrafted jewelry or
+            unique home decor pieces, the shopping options got you covered.
+          </p>
+          <button
+            class="read-more-btn"
+            onclick="window.location.href='./html/shopping.html'"
+          >
+            Read more
+          </button>
+        </section>
+      </article>
+      <article>
+        <figure class="article-image">
+          <img src="./images/Lunch-and-dine.jpeg" alt="Article 3" />
+        </figure>
+        <section class="article-text">
+          <h2>Lunch & Dine</h2>
+          <p>
+            Discover a diverse range of dining options, from cozy cafes to fine
+            dining restaurants, where you can savor delicious meals and
+            experience local flavors. Whether you're looking for a laid-back
+            atmosphere to enjoy a leisurely meal or a refined setting for a
+            special occasion, you'll find a variety of family-friendly local
+            restaurants.
+          </p>
+          <button
+            class="read-more-btn"
+            onclick="window.location.href='./html/restaurants.html'"
+          >
+            Read more
+          </button>
+        </section>
+      </article>
+
+      <article class="article-longer">
+        <figure class="article-image-longer">
+          <img
+            src="./images/Joyful-calendar.jpeg"
+            alt="Joyful Calendar image"
+          />
+        </figure>
+        <section class="article-longer-text">
+          <h2>Joyful Calendar of <em>Family-Friendly</em> Events</h2>
+          <p>
+            Stay connected with the vibrant rhythm of family-friendly events and
+            festivals in Amsterdam New West. Our extensive event calendar
+            promises to be your comprehensive guide, brimming with a multitude
+            of cultural celebrations, lively entertainment, and community
+            gatherings that span throughout your visit. From annual traditions
+            that highlight the rich history and diverse cultures of Amsterdam
+            New West.
+          </p>
+          <button
+            class="read-more-btn"
+            onclick="window.location.href='./html/events.html'"
+          >
+            Read more
+          </button>
+        </section>
+      </article>
+
+      <article class="questions">
+        <h2 class="word-spacing">Frequently Asked Questions</h2>
+
+        <ol>
+          <li class="site-questions">
+            <button onclick="toggleAnswer(this)">
+              What are the best shopping centers, local restaurants, and cafes
+              to try?
+            </button>
+            <p class="answer">
+              We provide curated lists and detailed descriptions of the
+              top-rated family-friendly local restaurants, cafes, and shopping
+              spots, ensuring families can plan memorable and enjoyable outings.
+            </p>
+          </li>
+          <li class="site-questions">
+            <button onclick="toggleAnswer(this)">
+              What events or activities are suitable for all ages to visit?
+            </button>
+            <p class="answer">
+              Check out our events page, we provide top-rated family-friendly
+              events, festivals, and activities, with recommendations for
+              enjoyable experiences.
+            </p>
+          </li>
+          <li class="site-questions">
+            <button onclick="toggleAnswer(this)">
+              Can I find family-friendly itineraries for a day or weekend in
+              Amsterdam Nieuw-West?
+            </button>
+            <p class="answer">
+              Our activites list gives you an idea of itineraries tailored for
+              families, suggesting a mix of attractions, dining options, and
+              activities suitable for different age groups.
+            </p>
+          </li>
+        </ol>
+      </article>
+      <section class="cookies-message" id="cookiesMessage">
+        Cookies Accept All or Deny All ?
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Western 2ends</p>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>

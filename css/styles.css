@@ -1,0 +1,411 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0px;
+  background-color: #f5f5dc;
+  color: #333; /* all the text colour*/
+  line-height: 1.6;
+}
+header {
+  background-color: #846d62;
+  color: #fff;
+  padding: 5px;
+  height: 70px;
+  justify-content: center;
+
+  display: flex;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  font-weight: 100;
+}
+em {
+  font-style: italic;
+}
+.letter-spacing {
+  letter-spacing: 6px;
+}
+
+.word-spacing {
+  word-spacing: 8px;
+}
+img {
+  width: 100%;
+}
+
+.logo {
+  max-width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+nav ul {
+  display: block;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 40px;
+  background-color: #f5f5dc;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(117, 46, 13);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  background-color: #638ab5;
+  color: #fff;
+  border-radius: 10px;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-links {
+  display: none;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.menu-links a {
+  margin: 5px;
+}
+
+section.cover-container {
+  background-color: rgb(95, 199, 199);
+  overflow: auto;
+  height: 490px;
+  align-items: center;
+}
+
+.cover-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cover-text {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(249, 249, 249);
+  margin-left: 10rem;
+  margin-top: -200px;
+}
+
+section.articles,
+section.articles-longer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+  align-items: stretch;
+}
+
+article {
+  padding: 15px;
+  background-color: rgb(233, 233, 233);
+  height: auto;
+  width: 460px;
+  margin: 10px;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+.article-longer {
+  display: flex;
+  background-color: rgb(233, 233, 233);
+  height: auto;
+  width: auto;
+  max-width: 940px;
+
+  margin: 10px;
+  border-radius: 15px;
+}
+
+.article-image img,
+.article-image-longer img {
+  background-color: beige;
+  margin: 10px;
+
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: inline-flex;
+}
+
+.article-text {
+  padding: 20px;
+  border-radius: 15px;
+  width: auto;
+}
+
+.article-longer-text {
+  padding: 20px;
+  border-radius: 15px;
+  width: auto;
+}
+
+.read-more-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  height: 30px;
+  width: 100px;
+  margin-left: 30%;
+}
+
+.read-more-btn:hover {
+  background-color: #555;
+}
+
+.cookies-message {
+  position: fixed;
+  bottom: 45px;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  margin: 20px auto 5px auto;
+  border-radius: 15px;
+  background-color: rgb(233, 233, 233);
+  padding: 10px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+.maps-container {
+  width: 610px;
+  height: 410px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  background-color: aqua;
+  align-self: center;
+}
+
+.google-map {
+  border: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  height: 100px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.site-questions {
+  margin-bottom: 15px;
+}
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.answer {
+  margin-top: 5px;
+  display: none;
+  text-indent: 10px;
+  color: black;
+}
+
+.questions {
+  background-color: #e0f2f1;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 940px;
+  max-height: 530px;
+  width: 100%;
+  margin-bottom: 70px;
+  border-color: #43766c;
+  border-style: double;
+  border-width: 5px;
+}
+
+.read-more-btn a:visited {
+  color: #638ab5;
+}
+footer {
+  background-color: #43766c;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Mobile Devices*/
+@media only screen and (max-width: 480px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-links.show {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  nav ul .main-menu {
+    margin: 0;
+    display: none;
+  }
+
+  section.cover-container {
+    height: 30%;
+    margin: auto;
+    justify-content: center;
+  }
+  .cover-image {
+    margin: 0;
+    height: 350px;
+    display: inline-flex;
+  }
+
+  .cover-text {
+    font-size: 3vw;
+    text-align: center;
+
+    padding-bottom: 135px;
+    margin-left: 4rem;
+  }
+  .article,
+  .article-longer {
+    width: auto;
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .article-image,
+  .article-image-longer {
+    min-height: 300px;
+    min-width: 400px;
+  }
+
+  .article-text,
+  .article-longer-text {
+    width: auto;
+  }
+}
+
+/*Tablet Devices */
+@media only screen and (min-width: 481px) and (max-width: 1279px) {
+  .article {
+    margin: 10px auto;
+  }
+
+  .article-longer {
+    max-width: 800px;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  .questions {
+    max-width: 100%;
+  }
+}
+
+/* Tablet and Larger Devices (at least 800px wide) */
+@media only screen and (min-width: 800px) {
+  .article {
+    width: 460px;
+  }
+  .article-longer {
+    flex-direction: row;
+  }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1280px) {
+  .article {
+    display: flex;
+    flex-direction: row;
+    max-width: 460px;
+  }
+}
