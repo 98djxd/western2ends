@@ -409,6 +409,10 @@ footer {
   .article {
     max-width: 460px;
   }
+  .article,
+  .article-longer {
+    margin: 20px;
+  }
   .questions {
     max-width: 100%;
   }
