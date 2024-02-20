@@ -381,7 +381,7 @@ footer {
   }
 
   .article-longer {
-    max-width: 800px;
+    max-width: auto;
     margin: 10px auto;
     flex-direction: column;
   }
@@ -394,9 +394,12 @@ footer {
 /* Tablet and Larger Devices (at least 800px wide) */
 @media only screen and (min-width: 800px) {
   .article {
-    width: 460px;
+    margin: 10px auto;
   }
+
   .article-longer {
+    max-width: auto;
+    margin: 10px auto;
     flex-direction: row;
   }
 }
@@ -404,7 +407,9 @@ footer {
 /* Desktop Devices */
 @media only screen and (min-width: 1280px) {
   .article {
-    
     max-width: 460px;
+  }
+  .questions {
+    max-width: 100%;
   }
 }
